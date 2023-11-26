@@ -5,10 +5,10 @@ html(lang='en')
 
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='')
-        meta(name='author', content='')
+        meta(name='description', content='Andrea Riosa, Applications Programmer (EQF 6) Portfolio and CV.')
+        meta(name='author', content='Andrea Riosa')
 
-        title Freelancer - Start Bootstrap Theme
+        title Andrea Riosa
 
         // Favicon
         link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
@@ -28,90 +28,101 @@ html(lang='en')
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.bg-secondary.text-uppercase.fixed-top
             .container
-                a.navbar-brand(href='#page-top') Start Bootstrap
+                a.navbar-brand(href='#page-top') //A.R.
                 button.navbar-toggler.text-uppercase.font-weight-bold.bg-primary.text-white.rounded(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menu
                     i.fas.fa-bars
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.ms-auto
                         li.nav-item.mx-0.mx-lg-1
-                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#portfolio') Portfolio
+                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#experience') Experience
                         li.nav-item.mx-0.mx-lg-1
                             a.nav-link.py-3.px-0.px-lg-3.rounded(href='#about') About
+                        li.nav-item.mx-0.mx-lg-1
+                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#portfolio') Projects
+                        li.nav-item.mx-0.mx-lg-1
+                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#skills') Skills
                         li.nav-item.mx-0.mx-lg-1
                             a.nav-link.py-3.px-0.px-lg-3.rounded(href='#contact') Contact
 
         // Masthead
         header.masthead.bg-primary.text-white.text-center
+            // Background Canvas
+            canvas#canvas
             .container.d-flex.align-items-center.flex-column
                 // Masthead Avatar Image
-                img.masthead-avatar.mb-5(src='assets/img/avataaars.svg', alt='...')
+                img.masthead-avatar.mb-5(src='assets/img/profile.jpg', alt='...')
                 // Masthead Heading
-                h1.masthead-heading.text-uppercase.mb-0 Start Bootstrap
+                h1.masthead-heading.text-uppercase.mb-0 Andrea Riosa
                 // Icon Divider
-                .divider-custom.divider-light
-                    .divider-custom-line
-                    .divider-custom-icon
-                        i.fas.fa-cube
-                    .divider-custom-line
+                //- .divider-custom.divider-light
+                //-     .divider-custom-line
+                //-     .divider-custom-icon
+                //-         i.fas.fa-cube
+                //-     .divider-custom-line
                 // Masthead Subheading
-                p.masthead-subheading.font-weight-light.mb-0 Graphic Artist - Web Designer - Illustrator
+                p.masthead-subheading.font-weight-light.mb-0 Senior Applications Programmer
+                // Scroll Page
+                a.btn.btn-circle(href='#experience')
+                    i.fa.fa-angle-double-down.animated
 
-        // Portfolio Section
-        section#portfolio.page-section.portfolio
+        // Experience Section
+        section#experience.page-section
             .container
-                // Portfolio Section Heading
-                h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Portfolio
+                // Experience Section Heading
+                h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Experience
                 // Icon Divider
                 .divider-custom
                     .divider-custom-line
                     .divider-custom-icon
                         i.fas.fa-cube
                     .divider-custom-line
-                // Portfolio Grid Items
+                // Experience Grid Items
                 .row.justify-content-center
-                    // Portfolio Item 1
-                    .col-md-6.col-lg-4.mb-5
-                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal1')
-                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-                                .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/cabin.png', alt='...')
-                    // Portfolio Item 2
-                    .col-md-6.col-lg-4.mb-5
-                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal2')
-                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-                                .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/cake.png', alt='...')
-                    // Portfolio Item 3
-                    .col-md-6.col-lg-4.mb-5
-                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal3')
-                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-                                .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/circus.png', alt='...')
-                    // Portfolio Item 4
-                    .col-md-6.col-lg-4.mb-5.mb-lg-0
-                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal4')
-                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-                                .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/game.png', alt='...')
-                    // Portfolio Item 5
-                    .col-md-6.col-lg-4.mb-5.mb-md-0
-                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal5')
-                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-                                .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/safe.png', alt='...')
-                    // Portfolio Item 6
-                    .col-md-6.col-lg-4
-                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal6')
-                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-                                .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/submarine.png', alt='...')
+                    // Experience Item 1
+                    .col-lg-3.col-md-6.col-xs-12.thumb
+                        a(href='http://www.microtec.eu/', target='_blank')
+                            img.img-thumbnail(src='assets/img/experience/microtec.png', alt='...')
+                        p.lead
+                            a(href='http://www.microtec.eu/', target='_blank') Microtec srl GmbH
+                            br
+                            | Software Engineering
+                            br
+                            | Present - 2017/09/18
+                            br
+                            | Brixen &amp; Mestre (IT), Global
+                    // Experience Item 2
+                    .col-lg-3.col-md-6.col-xs-12.thumb
+                        a(href='http://www.scquadro.it/', target='_blank')
+                            img.img-thumbnail(src='assets/img/experience/scquadro.png', alt='...')
+                        p.lead
+                            a(href='http://www.scquadro.it/', target='_blank') SCQUADRO Web Agency
+                            br
+                            | Full Stack Web Developer
+                            br
+                            | 2017/04/10 - 2015/03/12
+                            br
+                            | Venice (IT)
+                    // Experience Item 3
+                    .col-lg-3.col-md-6.col-xs-12.thumb
+                        a(href='http://www.veneziasistemi.it/', target='_blank')
+                            img.img-thumbnail(src='assets/img/experience/veneziasistemi.png', alt='...')
+                        p.lead
+                            a(href='http://www.veneziasistemi.it/', target='_blank') Venezia Sistemi srl
+                            br
+                            | Internship (160h)
+                            br
+                            | 2012/07/23 - 2012/06/25
+                            br
+                            | Venice (IT)
+                    // Experience Item 4
+                    .col-lg-3.col-md-6.col-xs-12.thumb.thumb-highlight
+                        a.thumbnail-highlight(href='https://it.linkedin.com/in/ariosa')
+                            img.img-thumbnail(src='assets/img/experience/linkedin.png', alt='...')
+                        p.lead
+                            a(href='https://it.linkedin.com/in/ariosa') My LinkedIn
+                            br
+                            | Visit my LinkedIn profile for more information about my working experience.
 
         // About Section
         section#about.page-section.bg-primary.text-white.mb-0
@@ -126,17 +137,234 @@ html(lang='en')
                     .divider-custom-line
                 // About Section Content
                 .row
-                    .col-lg-4.ms-auto
+                    .col-lg-4.text-center
                         p.lead
-                            | Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.
-                    .col-lg-4.me-auto
+                            strong Nationality:
+                            | Italian
+                            br
+                            strong Date of birth:
+                            | February 3, 1993
+                            br
+                            strong Language:
+                            | Italian, English
+                            a(href="https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages", target="_blank", style="color: white !important;") (B2)
+                    .col-lg-4.text-center.mt-4(style="margin-bottom: 2.5rem !important;")
+                        // About Section Button
+                        a.btn.btn-xl.btn-outline-light(href='CV_Andrea_Riosa_IT.pdf')
+                            i.fas.fa-download.me-2
+                            | Italian CV
+                    .col-lg-4.text-center
                         p.lead
-                            | You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!
-                // About Section Button
-                .text-center.mt-4
-                    a.btn.btn-xl.btn-outline-light(href='https://startbootstrap.com/theme/freelancer/')
-                        i.fas.fa-download.me-2
-                        | Free Download!
+                            strong Education:
+                            | Bachelor&apos;s Degree in Computer Science
+                            a(href="https://en.wikipedia.org/wiki/European_Qualifications_Framework", target="_blank", style="color: white !important;") (EQF 6)
+                            | Ca&apos; Foscari University of Venice, Mestre
+                            a(href="https://unive.it", target="_blank", style="color: white !important;") (IT)
+
+        // Portfolio Section
+        section#portfolio.page-section.portfolio
+            .container
+                // Portfolio Section Heading
+                h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Personal Projects
+                // Icon Divider
+                .divider-custom
+                    .divider-custom-line
+                    .divider-custom-icon
+                        i.fas.fa-cube
+                    .divider-custom-line
+                // Portfolio Grid Items Big
+                .row.justify-content-center
+                    // Portfolio Item 1
+                    .col-md-6.col-lg-4.mb-5
+                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal1')
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                                .portfolio-item-caption-content.text-center.text-white
+                                    i.fas.fa-plus.fa-3x
+                            img.img-fluid(src='assets/img/portfolio/netrooper.png', alt='...')
+                    // Portfolio Item 2
+                    .col-md-6.col-lg-4.mb-5
+                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal2')
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                                .portfolio-item-caption-content.text-center.text-white
+                                    i.fas.fa-plus.fa-3x
+                            img.img-fluid(src='assets/img/portfolio/hitbox.png', alt='...')
+                    // Portfolio Item 3
+                    .col-md-6.col-lg-4.mb-5
+                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal3')
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                                .portfolio-item-caption-content.text-center.text-white
+                                    i.fas.fa-plus.fa-3x
+                            img.img-fluid(src='assets/img/portfolio/iffclan.png', alt='...')
+                // Portfolio Grid Items Small
+                .row.justify-content-center
+                    // Portfolio Item 4
+                    .col-md-6.col-lg-4.mb-5.mb-lg-0
+                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal4')
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                                .portfolio-item-caption-content.text-center.text-white
+                                    i.fas.fa-plus.fa-3x
+                            img.img-fluid(src='assets/img/portfolio/payload.png', alt='...')
+                    // Portfolio Item 5
+                    .col-md-6.col-lg-4.mb-5.mb-md-0
+                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal5')
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                                .portfolio-item-caption-content.text-center.text-white
+                                    i.fas.fa-plus.fa-3x
+                            img.img-fluid(src='assets/img/portfolio/topicron.png', alt='...')
+
+        // Skills Section
+        section#skills.page-section.bg-primary.text-white.mb-0
+            .container
+                // Skills Section Heading
+                h2.page-section-heading.text-center.text-uppercase.text-white Skills
+                // Icon Divider
+                .divider-custom.divider-light
+                    .divider-custom-line
+                    .divider-custom-icon
+                        i.fas.fa-cube
+                    .divider-custom-line
+                // Skills Section Content
+                .row
+                    .col-lg-12.text-center
+                        p.lead.skills-desc-big STUFF I&apos;M CURRENTLY INTO RIGHT NOW
+                        p.lead.skills-desc-small STUFF I&apos;M CURRENTLY INTO
+                            br
+                            | RIGHT NOW
+                    .col-lg-3.skill
+                        h3
+                            i.fa.fa-industry
+                            | Industrial
+                        ul.fa-ul
+                            li
+                                i.fa-li.fa.fa-square
+                                | Windows and WinAPI
+                            li.divider
+                            li
+                                i.fa-li.fa.fa-square
+                                | C
+                            li
+                                i.fa-li.fa.fa-square
+                                | C++
+                            li
+                                i.fa-li.fa.fa-square
+                                | Proprietary Frameworks
+                            li
+                                i.fa-li.fa.fa-square
+                                | Conan Package Manager
+                            li.divider
+                            li
+                                i.fa-li.fa.fa-square
+                                | SQL and RDBMS
+                            li.divider
+                            li
+                                i.fa-li.fa.fa-square
+                                | Advanced Debugging
+                            li
+                                i.fa-li.fa.fa-square
+                                | Diff &amp; Merge
+                            li
+                                i.fa-li.fa.fa-square
+                                | Automation and Optimization
+                    .col-lg-3.skill-merge
+                        h3
+                            a.shortcut(href="https://insights.stackoverflow.com/survey/", target="_blank")
+                                i.fa.fa-cloud
+                                | Web
+                        ul.fa-ul
+                            li
+                                i.fa-li.fa.fa-square
+                                | Linux
+                                a.shortcut(href="http://51.75.69.158/", target="_blank") Server
+                            li.divider
+                            li
+                                i.fa-li.fa.fa-square
+                                | HTML
+                            li
+                                i.fa-li.fa.fa-square
+                                | CSS and Sass
+                            li
+                                i.fa-li.fa.fa-square
+                                | JavaScript and TypeScript
+                            li
+                                i.fa-li.fa.fa-square
+                                | PHP
+                            li.divider
+                            li
+                                i.fa-li.fa.fa-square
+                                | NoSQL
+                            li
+                                i.fa-li.fa.fa-square
+                                | Cloud Platforms
+                            li.divider
+                            li
+                                i.fa-li.fa.fa-square
+                                | Bootstrap
+                            li
+                                i.fa-li.fa.fa-square
+                                | Tailwind CSS
+                    .col-lg-3.skill-step.no-title
+                        ul.fa-ul
+                            li
+                                i.fa-li.fa.fa-square
+                                | Node.js
+                            li
+                                i.fa-li.fa.fa-square
+                                | Express.js
+                            li
+                                i.fa-li.fa-brands.fa-react
+                                a.shortcut(href="https://nextjs.org/", target="_blank") Next.js
+                            li
+                                i.fa-li.fa-brands.fa-angular
+                                a.shortcut(href="https://angular.io/", target="_blank") Angular
+                        h3
+                            i.fa.fa-flask
+                            | R&amp;D
+                        ul.fa-ul
+                            li
+                                i.fa-li.fa.fa-square
+                                | OpenCV
+                            li
+                                i.fa-li.fa.fa-square
+                                | WebAssembly
+                            li.divider
+                            li
+                                i.fa-li.fa.fa-square
+                                | Data Scraping
+                    .col-lg-3.skill-step
+                        h3
+                            i.fa.fa-cogs
+                            | Tools
+                        ul.fa-ul
+                            li
+                                i.fa-li.fa.fa-square
+                                | Microsoft Visual Studio
+                            li
+                                i.fa-li.fa.fa-square
+                                | Visual Studio Code
+                            li.divider
+                            li
+                                i.fa-li.fa.fa-square
+                                | GIT and SVN
+                            li
+                                i.fa-li.fa.fa-square
+                                | Docker
+                            li.divider
+                            li
+                                i.fa-li.fa.fa-square
+                                | Azure DevOps and Asana
+                            li
+                                i.fa-li.fa.fa-square
+                                | Jira and Trello
+                            li.divider
+                            li
+                                i.fa-li.fa.fa-square
+                                | Microsoft 365
+                            li
+                                i.fa-li.fa.fa-square
+                                | Google Workspace
+                            li
+                                i.fa-li.fa.fa-square
+                                | Slack
 
         // Contact Section
         section#contact.page-section
@@ -240,33 +468,32 @@ html(lang='en')
                     // Footer Location
                     .col-lg-4.mb-5.mb-lg-0
                         h4.text-uppercase.mb-4 Location
-                        p.lead.mb-0
-                            | 2215 John Daniel Drive
-                            br
-                            | Clark, MO 65243
+                        p.lead.mb-0 When I'm not travelling you can find me in my office located in Mestre (Venice).
                     // Footer Social Icons
                     .col-lg-4.mb-5.mb-lg-0
                         h4.text-uppercase.mb-4 Around the Web
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
-                            i.fab.fa-fw.fa-facebook-f
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
-                            i.fab.fa-fw.fa-twitter
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
+                        a.btn.btn-outline-light.btn-social.mx-1(href='https://linkedin.com/in/ariosa')
                             i.fab.fa-fw.fa-linkedin-in
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
-                            i.fab.fa-fw.fa-dribbble
+                        a.btn.btn-outline-light.btn-social.mx-1(href='https://github.com/weping')
+                            i.fab.fa-fw.fa-github
+                        a.btn.btn-outline-light.btn-social.mx-1(href='https://twitter.com/NTR404')
+                            i.fab.fa-fw.fa-twitter
+                        a.btn.btn-outline-light.btn-social.mx-1(href='https://instagram.com/breakpointing')
+                            i.fab.fa-fw.fa-instagram
+                        a.btn.btn-outline-light.btn-social.mx-1(href='https://facebook.com/riosa.andrea')
+                            i.fab.fa-fw.fa-facebook-f
                     // Footer About Text
                     .col-lg-4
-                        h4.text-uppercase.mb-4 About Freelancer
+                        h4.text-uppercase.mb-4 About Projects
                         p.lead.mb-0
-                            | Freelance is a free to use, MIT licensed Bootstrap theme created by
-                            a(href='http://startbootstrap.com') Start Bootstrap
-                            | .
+                            | Please note that all works made for
+                            a(href="#experience") others
+                            | are not mentioned in this web page.
 
         // Copyright Section
         div.copyright.py-4.text-center.text-white
             .container
-                small Copyright &copy; Your Website 2023
+                small Copyright &copy; Andrea Riosa 2024 - If you want to contact me use the form above, I will reply with my personal email.
 
         // Portfolio Modals
         include includes/portfolio-modal-1.pug
@@ -274,7 +501,6 @@ html(lang='en')
         include includes/portfolio-modal-3.pug
         include includes/portfolio-modal-4.pug
         include includes/portfolio-modal-5.pug
-        include includes/portfolio-modal-6.pug
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
