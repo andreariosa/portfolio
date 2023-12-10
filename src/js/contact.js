@@ -13,7 +13,7 @@ const eNameRequired = document.querySelector("[data-form-feedback='name:required
 const eEmailRequired = document.querySelector("[data-form-feedback='email:required']")
 const eEmailEmail = document.querySelector("[data-form-feedback='email:email']")
 const eMessageRequired = document.querySelector("[data-form-feedback='message:required']")
-const eActions = {show: 'show', reset: 'reset'}
+const eActions = { show: 'show', reset: 'reset' }
 
 onload = () => {
   resetFormSubmitComponents()
@@ -25,18 +25,17 @@ form.addEventListener('submit', (event) => {
     fSubmitButton.setAttribute('disabled', '')
 
     const data = {
-      name: fName.textContent,
-      email: fEmail.textContent,
-      message: fMessage.textContent,
+      name: fName.value,
+      email: fEmail.value,
+      message: fMessage.value,
     }
 
-    postData('././php/contact.php', data).then((response) => {
-      if (response.ok) {
+    postData('./php/contact.php', data).then((data) => {
+      console.log(data)
+      if (data === 'Sent' || data === 'SentWithPHPMailer') {
         fSubmitSuccessMessage.style.display = 'block'
-        console.log(response.json())
       } else {
         fSubmitErrorMessage.style.display = 'block'
-        throw new Error('Network response was not OK')
       }
     })
   }
@@ -54,9 +53,9 @@ form.addEventListener('input', () => {
 })
 
 function resetFormSubmitComponents() {
-    fSubmitSuccessMessage.style.display = 'none'
-    fSubmitErrorMessage.style.display = 'none'
-    fSubmitButton.setAttribute('disabled', '')
+  fSubmitSuccessMessage.style.display = 'none'
+  fSubmitErrorMessage.style.display = 'none'
+  fSubmitButton.setAttribute('disabled', '')
 }
 
 function handleError(id, action) {
@@ -105,8 +104,13 @@ async function postData(url = '', data = {}) {
       referrerPolicy: 'no-referrer',
       body: JSON.stringify(data),
     })
-    return response
+
+    if (!response.ok) {
+      throw new Error('Network response was not OK.')
+    }
+
+    return response.json()
   } catch (error) {
-    console.error('There has been a problem with the fetch operation:', error)
+    console.error('There has been a problem with the fetch operation.', error)
   }
 }

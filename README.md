@@ -43,5 +43,4 @@ original version.
 
 ## TODO
 
-- [ ] Add custom contact form backend
 - [ ] Add LaTeX resume and PDF build

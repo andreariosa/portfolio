@@ -390,7 +390,7 @@ html(lang='en')
                                     placeholder='Enter your name...',
                                     required
                                 )
-                                label(for='name') Full name
+                                label(for='name') Name
                                 .invalid-feedback(data-form-feedback='name:required')
                                     | A name is required.
 
@@ -401,7 +401,7 @@ html(lang='en')
                                     placeholder='name@example.com',
                                     required
                                 )
-                                label(for='email') Email address
+                                label(for='email') Email
                                 .invalid-feedback(data-form-feedback='email:required')
                                     | An email is required.
                                 .invalid-feedback(data-form-feedback='email:email')
@@ -420,11 +420,11 @@ html(lang='en')
 
                             // Submit success message
                             #submitSuccessMessage
-                                .text-center.fw-bolder.mb-3 Form submission successful
+                                .text-center.fw-bolder.mb-3 Your message has been sent.
 
                             // Submit error message
                             #submitErrorMessage
-                                .text-center.text-danger.mb-3 Error sending message
+                                .text-center.text-danger.mb-3 There was an error trying to send your message.
 
                             // Submit Button
                             button#submitButton.btn.btn-primary.btn-xl(type='submit') Send
