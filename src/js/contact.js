@@ -1,7 +1,6 @@
-// prettier-ignore
 const form = document.querySelector('form')
 
-// form components
+// Form components
 const fName = document.getElementById('name')
 const fEmail = document.getElementById('email')
 const fMessage = document.getElementById('message')
@@ -9,17 +8,11 @@ const fSubmitSuccessMessage = document.getElementById('submitSuccessMessage')
 const fSubmitErrorMessage = document.getElementById('submitErrorMessage')
 const fSubmitButton = document.getElementById('submitButton')
 
-// errors
-const eNameRequired = document.querySelector(
-  "[data-form-feedback='name:required']"
-)
-const eEmailRequired = document.querySelector(
-  "[data-form-feedback='email:required']"
-)
+// Errors
+const eNameRequired = document.querySelector("[data-form-feedback='name:required']")
+const eEmailRequired = document.querySelector("[data-form-feedback='email:required']")
 const eEmailEmail = document.querySelector("[data-form-feedback='email:email']")
-const eMessageRequired = document.querySelector(
-  "[data-form-feedback='message:required']"
-)
+const eMessageRequired = document.querySelector("[data-form-feedback='message:required']")
 const eActions = { show: 'show', reset: 'reset' }
 
 onload = () => {
@@ -63,14 +56,8 @@ form.addEventListener('input', () => {
   }
 
   handleError(fName.id, !fName.validity.valid ? eActions.show : eActions.reset)
-  handleError(
-    fEmail.id,
-    !fEmail.validity.valid ? eActions.show : eActions.reset
-  )
-  handleError(
-    fMessage.id,
-    !fMessage.validity.valid ? eActions.show : eActions.reset
-  )
+  handleError(fEmail.id, !fEmail.validity.valid ? eActions.show : eActions.reset)
+  handleError(fMessage.id, !fMessage.validity.valid ? eActions.show : eActions.reset)
 })
 
 function resetFormSubmitComponents() {
