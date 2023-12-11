@@ -69,7 +69,7 @@ if(empty($_POST['name']) || empty($_POST['email']) || empty($_POST['message']) |
 $name = strip_tags(htmlspecialchars($_POST['name']));
 $email_address = strip_tags(htmlspecialchars($_POST['email']));
 $message = strip_tags(htmlspecialchars($_POST['message']));
-$ip_block_env = "Block $url_file/?ip=$ip_address_env";
+$ip_block_env = "Block $url_file?ip=$ip_address_env";
 $ip_block_list = "List $url_dir/mail_blacklist.txt";
 $ip_block_logs = "Logs $url_dir/mail_logs.txt";
 
