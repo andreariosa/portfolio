@@ -1,6 +1,7 @@
+// prettier-ignore
 const form = document.querySelector('form')
 
-// Form components
+// form components
 const fName = document.getElementById('name')
 const fEmail = document.getElementById('email')
 const fMessage = document.getElementById('message')
@@ -8,7 +9,7 @@ const fSubmitSuccessMessage = document.getElementById('submitSuccessMessage')
 const fSubmitErrorMessage = document.getElementById('submitErrorMessage')
 const fSubmitButton = document.getElementById('submitButton')
 
-// Errors
+// errors
 const eNameRequired = document.querySelector(
   "[data-form-feedback='name:required']"
 )
