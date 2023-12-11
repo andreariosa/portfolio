@@ -9,10 +9,16 @@ const fSubmitErrorMessage = document.getElementById('submitErrorMessage')
 const fSubmitButton = document.getElementById('submitButton')
 
 // Errors
-const eNameRequired = document.querySelector("[data-form-feedback='name:required']")
-const eEmailRequired = document.querySelector("[data-form-feedback='email:required']")
+const eNameRequired = document.querySelector(
+  "[data-form-feedback='name:required']"
+)
+const eEmailRequired = document.querySelector(
+  "[data-form-feedback='email:required']"
+)
 const eEmailEmail = document.querySelector("[data-form-feedback='email:email']")
-const eMessageRequired = document.querySelector("[data-form-feedback='message:required']")
+const eMessageRequired = document.querySelector(
+  "[data-form-feedback='message:required']"
+)
 const eActions = { show: 'show', reset: 'reset' }
 
 onload = () => {
@@ -20,7 +26,11 @@ onload = () => {
 }
 
 form.addEventListener('submit', (event) => {
-  if (fName.validity.valid && fEmail.validity.valid && fMessage.validity.valid) {
+  if (
+    fName.validity.valid &&
+    fEmail.validity.valid &&
+    fMessage.validity.valid
+  ) {
     event.preventDefault()
     fSubmitButton.setAttribute('disabled', '')
 
@@ -43,13 +53,23 @@ form.addEventListener('submit', (event) => {
 
 form.addEventListener('input', () => {
   resetFormSubmitComponents()
-  if (fName.validity.valid && fEmail.validity.valid && fMessage.validity.valid) {
+  if (
+    fName.validity.valid &&
+    fEmail.validity.valid &&
+    fMessage.validity.valid
+  ) {
     fSubmitButton.removeAttribute('disabled')
   }
 
   handleError(fName.id, !fName.validity.valid ? eActions.show : eActions.reset)
-  handleError(fEmail.id, !fEmail.validity.valid ? eActions.show : eActions.reset)
-  handleError(fMessage.id, !fMessage.validity.valid ? eActions.show : eActions.reset)
+  handleError(
+    fEmail.id,
+    !fEmail.validity.valid ? eActions.show : eActions.reset
+  )
+  handleError(
+    fMessage.id,
+    !fMessage.validity.valid ? eActions.show : eActions.reset
+  )
 })
 
 function resetFormSubmitComponents() {
