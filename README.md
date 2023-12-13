@@ -40,7 +40,3 @@ original version.
 
 - [HTML to PUG](https://html2pug.vercel.app)
 - [CSS to SCSS](https://www.cssportal.com/css-to-scss)
-
-## TODO
-
-- [ ] Add LaTeX resume and PDF build
