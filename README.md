@@ -10,7 +10,7 @@ You can view the `package.json` file to see which scripts are included.
 
 #### [Clone](https://github.com/StartBootstrap/startbootstrap-freelancer)
 
-- `git clone https://github.com/Weping/portfolio.git`
+- `git clone` this repository
 - `cd portfolio`
 
 #### [Configure remote repo](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/configuring-a-remote-repository-for-a-fork)
