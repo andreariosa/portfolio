@@ -51,7 +51,7 @@ html(lang='en')
             canvas#canvas
             .container.d-flex.align-items-center.flex-column
                 // Masthead Avatar Image
-                img.masthead-avatar.mb-5(src='assets/img/profile.jpg', alt='...')
+                img.masthead-avatar.mb-5(src='assets/img/profile.jpg', alt='Andrea Riosa', data-bs-toggle='modal', data-bs-target='#hobbySportModal')
                 // Masthead Heading
                 h1.masthead-heading.text-uppercase.mb-0 Andrea Riosa
                 // Icon Divider
@@ -82,7 +82,7 @@ html(lang='en')
                     // Experience Item 1
                     .col-lg-3.col-md-6.col-xs-12.thumb
                         a(href='http://www.microtec.eu/', target='_blank')
-                            img.img-thumbnail(src='assets/img/experience/microtec.png', alt='...')
+                            img.img-thumbnail(src='assets/img/experience/microtec.png', alt='Microtec srl GmbH')
                         p.lead
                             a(href='http://www.microtec.eu/', target='_blank') Microtec srl GmbH
                             br
@@ -94,7 +94,7 @@ html(lang='en')
                     // Experience Item 2
                     .col-lg-3.col-md-6.col-xs-12.thumb
                         a(href='http://www.scquadro.it/', target='_blank')
-                            img.img-thumbnail(src='assets/img/experience/scquadro.png', alt='...')
+                            img.img-thumbnail(src='assets/img/experience/scquadro.png', alt='SCQUADRO Web Agency')
                         p.lead
                             a(href='http://www.scquadro.it/', target='_blank') SCQUADRO Web Agency
                             br
@@ -106,7 +106,7 @@ html(lang='en')
                     // Experience Item 3
                     .col-lg-3.col-md-6.col-xs-12.thumb
                         a(href='http://www.veneziasistemi.it/', target='_blank')
-                            img.img-thumbnail(src='assets/img/experience/veneziasistemi.png', alt='...')
+                            img.img-thumbnail(src='assets/img/experience/veneziasistemi.png', alt='Venezia Sistemi srl')
                         p.lead
                             a(href='http://www.veneziasistemi.it/', target='_blank') Venezia Sistemi srl
                             br
@@ -118,7 +118,7 @@ html(lang='en')
                     // Experience Item 4
                     .col-lg-3.col-md-6.col-xs-12.thumb.thumb-highlight
                         a.thumbnail-highlight(href='https://linkedin.com/in/andreariosa')
-                            img.img-thumbnail(src='assets/img/experience/linkedin.png', alt='...')
+                            img.img-thumbnail(src='assets/img/experience/linkedin.png', alt='My LinkedIn')
                         p.lead
                             a(href='https://linkedin.com/in/andreariosa') My LinkedIn
                             br
@@ -180,21 +180,21 @@ html(lang='en')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/netrooper.png', alt='...')
+                            img.img-fluid(src='assets/img/portfolio/netrooper.png', alt='neTrooper')
                     // Portfolio Item 2
                     .col-md-6.col-lg-4.mb-5
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal2')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/hitbox.png', alt='...')
+                            img.img-fluid(src='assets/img/portfolio/hitbox.png', alt='Hitbox')
                     // Portfolio Item 3
                     .col-md-6.col-lg-4.mb-5
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal3')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/iffclan.png', alt='...')
+                            img.img-fluid(src='assets/img/portfolio/iffclan.png', alt='IFFclan')
                 // Portfolio Grid Items Small
                 .row.justify-content-center
                     // Portfolio Item 4
@@ -203,14 +203,14 @@ html(lang='en')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/payload.png', alt='...')
+                            img.img-fluid(src='assets/img/portfolio/payload.png', alt='Payload')
                     // Portfolio Item 5
                     .col-md-6.col-lg-4.mb-5.mb-md-0
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal5')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/topicron.png', alt='...')
+                            img.img-fluid(src='assets/img/portfolio/topicron.png', alt='TopiCron')
 
         // Skills Section
         section#skills.page-section.bg-primary.text-white.mb-0
@@ -226,10 +226,8 @@ html(lang='en')
                 // Skills Section Content
                 .row
                     .col-lg-12.text-center
-                        p.lead.skills-desc-big STUFF I&apos;M CURRENTLY INTO RIGHT NOW
+                        p.lead.skills-desc-big STUFF I&apos;M FOLLOWING AT THE MOMENT STAYING UPDATED
                         p.lead.skills-desc-small STUFF I&apos;M CURRENTLY INTO
-                            br
-                            | RIGHT NOW
                     .col-lg-3.skill
                         h3
                             i.fa.fa-industry
@@ -471,6 +469,9 @@ html(lang='en')
         include includes/portfolio-modal-3.pug
         include includes/portfolio-modal-4.pug
         include includes/portfolio-modal-5.pug
+
+        // Hobby and sport Modal
+        include includes/hobby-sport-modal.pug
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
