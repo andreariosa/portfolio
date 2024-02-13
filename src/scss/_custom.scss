@@ -120,6 +120,37 @@ $custom-color-2: #2c343f;
 }
 
 //
+// Custom sections: Portfolio
+//
+
+.hobby-sport-modal {
+  .modal-content {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+
+    .container {
+      padding-top: 12px;
+      padding-bottom: 12px;
+
+      ul {
+        margin-right: 40px;
+
+        li {
+          color: white;
+          margin-top: 4px;
+          margin-bottom: 4px;
+          border-radius: $border-radius;
+          background: $secondary;
+        }
+
+        svg {
+          color: $secondary;
+        }
+      }
+    }
+  }
+}
+
+//
 // Custom sections: Experience (extra)
 //
 
