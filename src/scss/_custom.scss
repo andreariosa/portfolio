@@ -150,6 +150,18 @@ $custom-color-2: #2c343f;
   }
 }
 
+.extra {
+  padding-top: 6rem;
+
+  .portfolio-item {
+    box-shadow: 0 0 25px 5px $primary;
+  }
+}
+
+.img-extra {
+  box-shadow: 0 0 50px 15px $primary;
+}
+
 //
 // Custom sections: Experience (extra)
 //
@@ -298,6 +310,10 @@ $custom-color-2: #2c343f;
 }
 
 @include media-breakpoint-down(lg) {
+  .extra {
+    padding-top: 0;
+  }
+
   .skill {
     border: 5px solid $custom-color-1;
   }

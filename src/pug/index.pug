@@ -211,6 +211,31 @@ html(lang='en')
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
                             img.img-fluid(src='assets/img/portfolio/topicron.png', alt='TopiCron')
+            .container.extra
+                // Portfolio Section Heading
+                h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Co-Founder Projects
+                // Icon Divider
+                .divider-custom
+                    .divider-custom-line
+                    .divider-custom-icon
+                        i.fas.fa-cube
+                    .divider-custom-line
+                // Portfolio Grid Items Small
+                .row.justify-content-center
+                    // Portfolio Item 6
+                    .col-md-6.col-lg-4.mb-5.mb-lg-0
+                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal6')
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                                .portfolio-item-caption-content.text-center.text-white
+                                    i.fas.fa-plus.fa-3x
+                            img.img-fluid(src='assets/img/portfolio/tastetweak.png', alt='TasteTweak')
+                    // Portfolio Item 7
+                    .col-md-6.col-lg-4.mb-5.mb-md-0
+                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal7')
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                                .portfolio-item-caption-content.text-center.text-white
+                                    i.fas.fa-plus.fa-3x
+                            img.img-fluid(src='assets/img/portfolio/boostnatura.png', alt='BoostNatura')
 
         // Skills Section
         section#skills.page-section.bg-primary.text-white.mb-0
@@ -469,6 +494,8 @@ html(lang='en')
         include includes/portfolio-modal-3.pug
         include includes/portfolio-modal-4.pug
         include includes/portfolio-modal-5.pug
+        include includes/portfolio-modal-6.pug
+        include includes/portfolio-modal-7.pug
 
         // Hobby and sport Modal
         include includes/hobby-sport-modal.pug

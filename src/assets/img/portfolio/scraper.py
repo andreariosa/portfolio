@@ -12,8 +12,8 @@ driver.implicitly_wait(30)
 
 drDelay = 14.5
 
-urls = ["http://netrooper.com", "http://hitbox.it", "http://iffclan.com", "http://payload.pw", "http://topicron.com"]
-names = ["netrooper", "hitbox", "iffclan", "payload", "topicron"]
+urls = ["http://netrooper.com", "http://hitbox.it", "http://iffclan.com", "http://payload.pw", "http://topicron.com", "https://tastetweak.com", "https://boostnatura.com"]
+names = ["netrooper", "hitbox", "iffclan", "payload", "topicron", "tastetweak", "boostnatura"]
 
 imgExt = ".png"
 imgCropRight = 21
