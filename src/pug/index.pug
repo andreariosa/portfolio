@@ -461,7 +461,7 @@ html(lang='en')
                     // Footer Location
                     .col-lg-4.mb-5.mb-lg-0
                         h4.text-uppercase.mb-4 Location
-                        p.lead.mb-0 When I'm not travelling you can find me in my office located in Mestre (Venice).
+                        p.lead.mb-0 When I'm not travelling you can find me in my office in Mestre (Venice).
                     // Footer Social Icons
                     .col-lg-4.mb-5.mb-lg-0
                         h4.text-uppercase.mb-4 Around the Web
@@ -479,14 +479,20 @@ html(lang='en')
                     .col-lg-4
                         h4.text-uppercase.mb-4 About Projects
                         p.lead.mb-0
-                            | Please note that all works made for
+                            | Note that all works made for
                             a(href="#experience") others
                             | are not mentioned in this web page.
 
         // Copyright Section
         div.copyright.py-4.text-center.text-white
             .container
-                small Copyright &copy; Andrea Riosa 2024 - If you want to contact me use the form above, I will reply with my personal email.
+                small
+                    | Made by Andrea Riosa
+                    span#year
+                    | Please write me using the "Contact me" form, I will reply with my personal email.
+
+        script.
+            document.getElementById('year').textContent = `${new Date().getFullYear()}.`;
 
         // Portfolio Modals
         include includes/portfolio-modal-1.pug
