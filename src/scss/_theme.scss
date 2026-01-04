@@ -1,0 +1,24 @@
+@use './variables' as vars;
+
+@forward './variables';
+
+@use 'bootstrap/scss/bootstrap' with (
+  $teal: vars.$teal,
+  $primary: vars.$primary,
+  $secondary: vars.$secondary,
+  $min-contrast-ratio: vars.$min-contrast-ratio,
+  $font-family-sans-serif: vars.$font-family-sans-serif,
+  $headings-font-family: vars.$headings-font-family,
+  $headings-font-weight: vars.$headings-font-weight,
+  $border-width: vars.$border-width,
+  $border-radius: vars.$border-radius,
+  $border-radius-lg: vars.$border-radius-lg,
+  $border-radius-sm: vars.$border-radius-sm,
+  $form-floating-height: vars.$form-floating-height,
+  $form-floating-padding-x: vars.$form-floating-padding-x,
+  $form-floating-padding-y: vars.$form-floating-padding-y,
+  $form-floating-input-padding-t: vars.$form-floating-input-padding-t,
+  $form-floating-input-padding-b: vars.$form-floating-input-padding-b,
+  $form-floating-label-transform: vars.$form-floating-label-transform,
+  $input-btn-border-width: vars.$input-btn-border-width
+);

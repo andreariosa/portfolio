@@ -2,8 +2,8 @@
 // Variables
 //
 
-@import './variables/colors';
-@import './variables/spacing';
-@import './variables/typography';
-@import './variables/borders';
-@import './variables/forms';
+@forward './variables/colors';
+@forward './variables/spacing';
+@forward './variables/typography';
+@forward './variables/borders';
+@forward './variables/forms';

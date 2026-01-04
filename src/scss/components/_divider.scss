@@ -1,3 +1,6 @@
+@use '../theme' as *;
+@use 'bootstrap/scss/bootstrap' as bs;
+
 //
 // Divider
 //
@@ -33,11 +36,11 @@
 
   &.divider-light {
     .divider-custom-line {
-      background-color: $white;
+      background-color: bs.$white;
     }
 
     .divider-custom-icon {
-      color: $white;
+      color: bs.$white;
     }
   }
 }

@@ -7,16 +7,16 @@ const postcss = require('postcss')
 const sass = require('sass')
 const sh = require('shelljs')
 
-const stylesPath = '../src/scss/styles.scss'
+const stylesPath = upath.resolve(upath.dirname(__filename), '../src/scss/styles.scss')
 const destPath = upath.resolve(
   upath.dirname(__filename),
   '../dist/css/styles.css'
 )
 
 module.exports = function renderSCSS() {
-  const results = sass.renderSync({
-    data: entryPoint,
-    includePaths: [upath.resolve(upath.dirname(__filename), '../node_modules')],
+  const results = sass.compile(stylesPath, {
+    loadPaths: [upath.resolve(upath.dirname(__filename), '../node_modules')],
+    quietDeps: true,
   })
 
   const destPathDirname = upath.dirname(destPath)
@@ -24,8 +24,10 @@ module.exports = function renderSCSS() {
     sh.mkdir('-p', destPathDirname)
   }
 
+  const cssWithBanner = `${entryPoint}\n${results.css}`
+
   postcss([autoprefixer])
-    .process(results.css, { from: 'styles.css', to: 'styles.css' })
+    .process(cssWithBanner, { from: 'styles.css', to: 'styles.css' })
     .then((result) => {
       result.warnings().forEach((warn) => {
         console.warn(warn.toString())
@@ -43,5 +45,4 @@ const entryPoint = `/*!
   packageJSON.name
 }/blob/master/LICENSE)
 */
-@import "${stylesPath}"
 `

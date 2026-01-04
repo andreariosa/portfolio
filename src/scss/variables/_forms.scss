@@ -2,6 +2,8 @@
 // Forms
 //
 
+@use './borders' as *;
+
 // Override variables for the Bootstrap floating forms component
 
 $form-floating-height: 5.5rem;

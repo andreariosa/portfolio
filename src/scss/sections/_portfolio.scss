@@ -1,3 +1,7 @@
+@use '../theme' as *;
+@use 'bootstrap/scss/bootstrap' as bs;
+@use 'sass:color';
+
 //
 // Portfolio
 //
@@ -15,9 +19,9 @@
       position: absolute;
       top: 0;
       left: 0;
-      transition: $transition-base;
+      transition: bs.$transition-base;
       opacity: 0;
-      background-color: fade-out($primary, 0.1);
+      background-color: color.adjust($primary, $alpha: -0.1);
 
       &:hover {
         opacity: 1;
@@ -42,7 +46,7 @@
     font-size: 2.25rem;
     line-height: 2rem;
 
-    @include media-breakpoint-up(lg) {
+    @include bs.media-breakpoint-up(lg) {
       font-size: 3rem;
       line-height: 2.5rem;
     }

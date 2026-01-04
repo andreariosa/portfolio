@@ -1,3 +1,6 @@
+@use './theme' as *;
+@use 'bootstrap/scss/bootstrap' as bs;
+
 //
 // Custom variables: Colors
 //
@@ -30,7 +33,7 @@ $custom-color-2: #2c343f;
   background: $secondary !important;
 
   .navbar-brand {
-    color: $white !important;
+    color: bs.$white !important;
   }
 }
 
@@ -260,7 +263,7 @@ $custom-color-2: #2c343f;
 // Custom media queries
 //
 
-@include media-breakpoint-down(sm) {
+@include bs.media-breakpoint-down(sm) {
   .thumb-highlight {
     margin-bottom: 0px !important;
     border-radius: 0;
@@ -271,7 +274,7 @@ $custom-color-2: #2c343f;
   }
 }
 
-@include media-breakpoint-down(md) {
+@include bs.media-breakpoint-down(md) {
   #mainNav {
     background: $secondary !important;
   }
@@ -309,7 +312,7 @@ $custom-color-2: #2c343f;
   }
 }
 
-@include media-breakpoint-down(lg) {
+@include bs.media-breakpoint-down(lg) {
   .extra {
     padding-top: 0;
   }
@@ -353,7 +356,7 @@ $custom-color-2: #2c343f;
   }
 }
 
-@include media-breakpoint-down(xl) {
+@include bs.media-breakpoint-down(xl) {
   .thumb {
     text-align: center;
   }
@@ -378,7 +381,7 @@ $custom-color-2: #2c343f;
   }
 }
 
-@include media-breakpoint-up(md) {
+@include bs.media-breakpoint-up(md) {
   .masthead {
     .container {
       width: 550px;

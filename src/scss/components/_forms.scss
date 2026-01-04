@@ -1,3 +1,6 @@
+@use '../theme' as *;
+@use 'bootstrap/scss/bootstrap' as bs;
+
 //
 // Forms
 //
@@ -19,6 +22,6 @@
 
   label {
     font-size: 1.5rem;
-    color: $gray-600;
+    color: bs.$gray-600;
   }
 }

@@ -1,3 +1,6 @@
+@use '../theme' as *;
+@use 'bootstrap/scss/bootstrap' as bs;
+
 //
 // Navbar
 //
@@ -9,7 +12,7 @@
   font-weight: $headings-font-weight;
 
   .navbar-brand {
-    color: $white;
+    color: bs.$white;
   }
 
   .navbar-nav {
@@ -17,7 +20,7 @@
 
     li.nav-item {
       a.nav-link {
-        color: $white;
+        color: bs.$white;
 
         &:hover {
           color: $primary;
@@ -25,7 +28,7 @@
 
         &:active,
         &:focus {
-          color: $white;
+          color: bs.$white;
         }
 
         &.active {
@@ -41,7 +44,7 @@
   }
 }
 
-@include media-breakpoint-up(lg) {
+@include bs.media-breakpoint-up(lg) {
   #mainNav {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -57,13 +60,13 @@
     }
 
     .navbar-nav > li.nav-item > a.nav-link.active {
-      color: $white;
+      color: bs.$white;
       background: $primary;
 
       &:active,
       &:focus,
       &:hover {
-        color: $white;
+        color: bs.$white;
         background: $primary;
       }
     }

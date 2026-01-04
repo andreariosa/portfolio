@@ -1,3 +1,6 @@
+@use './theme' as *;
+@use 'bootstrap/scss/bootstrap' as bs;
+
 //
 // Global
 //
@@ -35,7 +38,7 @@ strong {
     line-height: 2rem;
   }
 
-  @include media-breakpoint-up(lg) {
+  @include bs.media-breakpoint-up(lg) {
     .page-section-heading {
       font-size: 3rem;
       line-height: 2.5rem;
