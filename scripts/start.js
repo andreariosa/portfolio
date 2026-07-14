@@ -1,4 +1,4 @@
-const concurrently = require('concurrently')
+const { concurrently } = require('concurrently')
 const upath = require('upath')
 
 const browserSyncPath = upath.resolve(
