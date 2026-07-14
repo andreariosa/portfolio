@@ -48,6 +48,14 @@ window.addEventListener('DOMContentLoaded', (event) => {
   // Customizations
   //
 
+  // Activate Bootstrap tooltips
+  const tooltipTriggerList = document.querySelectorAll(
+    '[data-bs-toggle="tooltip"]'
+  )
+  ;[...tooltipTriggerList].map(
+    (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+  )
+
   // Canvas background function
   var canvasBackground = function () {
     var c = document.getElementById('canvas')

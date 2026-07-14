@@ -5,7 +5,7 @@ html(lang='en')
 
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='Personal portfolio and curriculum of BCS Andrea Riosa, Senior Applications Programmer for Microtec srl GmbH, Software Engineering department.')
+        meta(name='description', content='Personal portfolio and curriculum of BCS Andrea Riosa, Senior Software Engineer | Technical Lead (Individual Contributor) for MiCROTEC S.p.A., Software Engineering department.')
         meta(name='author', content='Andrea Riosa')
 
         title Andrea Riosa
@@ -61,7 +61,16 @@ html(lang='en')
                 //-         i.fas.fa-cube
                 //-     .divider-custom-line
                 // Masthead Subheading
-                p.masthead-subheading.font-weight-light.mb-0 Senior Applications Programmer
+                p.masthead-subheading.font-weight-light.mb-0
+                    | Senior Software Engineer |
+                    span.technical-lead-tooltip(
+                        tabindex='0',
+                        role='button',
+                        data-bs-toggle='tooltip',
+                        data-bs-placement='bottom',
+                        data-bs-trigger='hover focus click',
+                        title='Individual Contributor'
+                    ) Technical Lead
                 // Scroll Page
                 a.btn.btn-circle(href='#experience')
                     i.fa.fa-angle-double-down.animated
@@ -81,10 +90,10 @@ html(lang='en')
                 .row.justify-content-center
                     // Experience Item 1
                     .col-lg-3.col-md-6.col-xs-12.thumb
-                        a(href='http://www.microtec.eu/', target='_blank')
-                            img.img-thumbnail(src='assets/img/experience/microtec.png', alt='Microtec srl GmbH')
+                        a(href='http://www.microtec.com/', target='_blank')
+                            img.img-thumbnail(src='assets/img/experience/microtec.png', alt='MiCROTEC S.p.A.')
                         p.lead
-                            a(href='http://www.microtec.eu/', target='_blank') Microtec srl GmbH
+                            a(href='http://www.microtec.com/', target='_blank') MiCROTEC S.p.A.
                             br
                             | Software Engineering
                             br
@@ -106,9 +115,9 @@ html(lang='en')
                     // Experience Item 3
                     .col-lg-3.col-md-6.col-xs-12.thumb
                         a(href='http://www.veneziasistemi.it/', target='_blank')
-                            img.img-thumbnail(src='assets/img/experience/veneziasistemi.png', alt='Venezia Sistemi srl')
+                            img.img-thumbnail(src='assets/img/experience/veneziasistemi.png', alt='Venezia Sistemi S.r.l.')
                         p.lead
-                            a(href='http://www.veneziasistemi.it/', target='_blank') Venezia Sistemi srl
+                            a(href='http://www.veneziasistemi.it/', target='_blank') Venezia Sistemi S.r.l.
                             br
                             | Internship (160h)
                             br
@@ -267,9 +276,6 @@ html(lang='en')
                                 | C and C++
                             li
                                 i.fa-li.fa.fa-square
-                                | Qt Widgets
-                            li
-                                i.fa-li.fa.fa-square
                                 | Proprietary Frameworks
                             li
                                 i.fa-li.fa.fa-square
@@ -308,9 +314,6 @@ html(lang='en')
                             li
                                 i.fa-li.fa.fa-square
                                 | JavaScript and TypeScript
-                            li
-                                i.fa-li.fa.fa-square
-                                | PHP
                             li.divider
                             li
                                 i.fa-li.fa.fa-square
@@ -336,9 +339,6 @@ html(lang='en')
                             li
                                 i.fa-li.fa.fa-square
                                 | Next.js
-                            li
-                                i.fa-li.fa.fa-square
-                                | Angular
                         h3
                             i.fa.fa-flask
                             | Interests
@@ -384,9 +384,6 @@ html(lang='en')
                             li
                                 i.fa-li.fa.fa-square
                                 | Google Workspace
-                            li
-                                i.fa-li.fa.fa-square
-                                | Slack
 
         // Contact Section
         section#contact.page-section
