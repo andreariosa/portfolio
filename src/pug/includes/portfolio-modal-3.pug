@@ -1,5 +1,5 @@
 // Portfolio Modal 3
-#portfolioModal3.portfolio-modal.modal.fade(tabindex='-1', aria-labelledby='portfolioModal3', aria-hidden='true')
+#portfolioModal3.portfolio-modal.modal.fade(tabindex='-1', aria-labelledby='portfolioModal3Label', aria-hidden='true')
     .modal-dialog.modal-xl
         .modal-content
             .modal-header.border-0
@@ -9,7 +9,7 @@
                     .row.justify-content-center
                         .col-lg-8
                             // Portfolio Modal - Title
-                            h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 IFFclan
+                            h2#portfolioModal3Label.portfolio-modal-title.text-secondary.text-uppercase.mb-0 IFFclan
                             // Icon Divider
                             .divider-custom
                                 .divider-custom-line
@@ -20,9 +20,10 @@
                             img.img-fluid.rounded.mb-5(src='assets/img/portfolio/iffclan.png', alt='IFFclan')
                             // Portfolio Modal - Text
                             p.mb-4
-                                a(href='http://iffclan.com', target='_blank') IFFclan.com
+                                a(href='https://iffclan.com', target='_blank', rel='noopener noreferrer') IFFclan.com
                                 br
                                 | Since
+                                |
                                 strong 2008
                             button.btn.btn-primary(data-bs-dismiss='modal')
                                 i.fas.fa-xmark.fa-fw

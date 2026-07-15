@@ -200,11 +200,11 @@
 
 % Render author's linked-in
 % Usage: \linkedin{<linked-in-nick>}
-\newcommand*{\linkedin}[1]{\sociallink{\linkedinSymbol}{http://www.linkedin.com/in/#1/fr}{linkedin.com/in/#1}}
+\newcommand*{\linkedin}[1]{\sociallink{\linkedinSymbol}{https://linkedin.com/in/#1/fr}{linkedin.com/in/#1}}
 
 % Render author's viadeo
 % Usage: \viadeo{<viadeo-nick>}
-\newcommand*{\viadeo}[1]{\sociallink{\viadeoSymbol}{http://www.viadeo.com/fr/profile/#1}{viadeo.com/fr/profile/#1}}
+\newcommand*{\viadeo}[1]{\sociallink{\viadeoSymbol}{https://viadeo.com/fr/profile/#1}{viadeo.com/fr/profile/#1}}
 
 % Render author's github
 % Usage: \github{<github-nick>}

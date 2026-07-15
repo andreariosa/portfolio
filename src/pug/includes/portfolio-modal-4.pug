@@ -1,5 +1,5 @@
 // Portfolio Modal 4
-#portfolioModal4.portfolio-modal.modal.fade(tabindex='-1', aria-labelledby='portfolioModal4', aria-hidden='true')
+#portfolioModal4.portfolio-modal.modal.fade(tabindex='-1', aria-labelledby='portfolioModal4Label', aria-hidden='true')
     .modal-dialog.modal-xl
         .modal-content
             .modal-header.border-0
@@ -9,7 +9,7 @@
                     .row.justify-content-center
                         .col-lg-8
                             // Portfolio Modal - Title
-                            h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Payload
+                            h2#portfolioModal4Label.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Payload
                             // Icon Divider
                             .divider-custom
                                 .divider-custom-line
@@ -20,9 +20,10 @@
                             img.img-fluid.rounded.mb-5(src='assets/img/portfolio/payload.png', alt='Payload')
                             // Portfolio Modal - Text
                             p.mb-4
-                                a(href='http://payload.pw', target='_blank') Payload.pw
+                                a(href='https://payload.pw', target='_blank', rel='noopener noreferrer') Payload.pw
                                 br
                                 | Since
+                                |
                                 strong 2016
                             button.btn.btn-primary(data-bs-dismiss='modal')
                                 i.fas.fa-xmark.fa-fw

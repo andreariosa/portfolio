@@ -37,9 +37,9 @@ form.addEventListener('submit', (event) => {
     postData('./php/contact.php', data).then((data) => {
       console.log(data)
       if (data === 'Sent' || data === 'SentWithPHPMailer') {
-        fSubmitSuccessMessage.style.display = 'block'
+        fSubmitSuccessMessage.classList.remove('d-none')
       } else {
-        fSubmitErrorMessage.style.display = 'block'
+        fSubmitErrorMessage.classList.remove('d-none')
       }
     })
   }
@@ -61,8 +61,8 @@ form.addEventListener('input', () => {
 })
 
 function resetFormSubmitComponents() {
-  fSubmitSuccessMessage.style.display = 'none'
-  fSubmitErrorMessage.style.display = 'none'
+  fSubmitSuccessMessage.classList.add('d-none')
+  fSubmitErrorMessage.classList.add('d-none')
   fSubmitButton.setAttribute('disabled', '')
 }
 

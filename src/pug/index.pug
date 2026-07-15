@@ -5,7 +5,7 @@ html(lang='en')
 
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='Personal portfolio and curriculum of BCS Andrea Riosa, Senior Software Engineer | Technical Lead (Individual Contributor) for MiCROTEC S.p.A., Software Engineering department.')
+        meta(name='description', content='Personal portfolio and CV of Andrea Riosa, Senior Software Engineer | Technical Lead (Individual Contributor) at MiCROTEC S.p.A.')
         meta(name='author', content='Andrea Riosa')
 
         title Andrea Riosa
@@ -62,7 +62,9 @@ html(lang='en')
                 //-     .divider-custom-line
                 // Masthead Subheading
                 p.masthead-subheading.font-weight-light.mb-0
-                    | Senior Software Engineer |
+                    | Senior Software Engineer
+                    span.masthead-role-sep |
+                    |
                     span.technical-lead-tooltip(
                         tabindex='0',
                         role='button',
@@ -70,9 +72,9 @@ html(lang='en')
                         data-bs-placement='bottom',
                         data-bs-trigger='hover focus click',
                         title='Individual Contributor'
-                    ) Technical Lead
+                    ) Technical Lead (IC)
                 // Scroll Page
-                a.btn.btn-circle(href='#experience')
+                a.btn.btn-circle(href='#experience', aria-label='Scroll to experience')
                     i.fa.fa-angle-double-down.animated
 
         // Experience Section
@@ -90,48 +92,48 @@ html(lang='en')
                 .row.justify-content-center
                     // Experience Item 1
                     .col-lg-3.col-md-6.col-xs-12.thumb
-                        a(href='http://www.microtec.com/', target='_blank')
+                        a(href='https://microtec.com', target='_blank', rel='noopener noreferrer')
                             img.img-thumbnail(src='assets/img/experience/microtec.png', alt='MiCROTEC S.p.A.')
                         p.lead
-                            a(href='http://www.microtec.com/', target='_blank') MiCROTEC S.p.A.
+                            a(href='https://microtec.com', target='_blank', rel='noopener noreferrer') MiCROTEC S.p.A.
                             br
-                            | Software Engineering
+                            | Senior Software Engineer | Technical Lead (IC)
                             br
-                            | Present - 2017/09/18
+                            | 2017/09/18 – Present
                             br
                             | Brixen &amp; Mestre (IT), Global
                     // Experience Item 2
                     .col-lg-3.col-md-6.col-xs-12.thumb
-                        a(href='http://www.scquadro.it/', target='_blank')
+                        a(href='https://scquadro.it', target='_blank', rel='noopener noreferrer')
                             img.img-thumbnail(src='assets/img/experience/scquadro.png', alt='SCQUADRO Web Agency')
                         p.lead
-                            a(href='http://www.scquadro.it/', target='_blank') SCQUADRO Web Agency
+                            a(href='https://scquadro.it', target='_blank', rel='noopener noreferrer') SCQUADRO Web Agency
                             br
                             | Full Stack Web Developer
                             br
-                            | 2017/04/10 - 2015/03/12
+                            | 2015/03/12 – 2017/04/10
                             br
                             | Venice (IT)
                     // Experience Item 3
                     .col-lg-3.col-md-6.col-xs-12.thumb
-                        a(href='http://www.veneziasistemi.it/', target='_blank')
+                        a(href='https://veneziasistemi.it', target='_blank', rel='noopener noreferrer')
                             img.img-thumbnail(src='assets/img/experience/veneziasistemi.png', alt='Venezia Sistemi S.r.l.')
                         p.lead
-                            a(href='http://www.veneziasistemi.it/', target='_blank') Venezia Sistemi S.r.l.
+                            a(href='https://veneziasistemi.it', target='_blank', rel='noopener noreferrer') Venezia Sistemi S.r.l.
                             br
                             | Internship (160h)
                             br
-                            | 2012/07/23 - 2012/06/25
+                            | 2012/06/25 – 2012/07/23
                             br
                             | Venice (IT)
                     // Experience Item 4
                     .col-lg-3.col-md-6.col-xs-12.thumb.thumb-highlight
-                        a.thumbnail-highlight(href='https://linkedin.com/in/andreariosa')
+                        a.thumbnail-highlight(href='https://linkedin.com/in/andreariosa', target='_blank', rel='noopener noreferrer')
                             img.img-thumbnail(src='assets/img/experience/linkedin.png', alt='My LinkedIn')
                         p.lead
-                            a(href='https://linkedin.com/in/andreariosa') My LinkedIn
+                            a(href='https://linkedin.com/in/andreariosa', target='_blank', rel='noopener noreferrer') My LinkedIn
                             br
-                            | Visit my LinkedIn profile for more information about my working experience.
+                            | Visit my LinkedIn profile for more information about my work experience.
 
         // About Section
         section#about.page-section.bg-primary.text-white.mb-0
@@ -154,9 +156,10 @@ html(lang='en')
                             strong Date of birth:
                             | February 3, 1993
                             br
-                            strong Language:
-                            | Italian, English
-                            a(href="https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages", target="_blank", style="color: white !important;") (B2)
+                            strong Languages:
+                            | Italian (native), English
+                            |
+                            a(href="https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages", target="_blank", rel="noopener noreferrer", style="color: white !important;") (B2)
                     .col-lg-4.text-center.mt-4(style="margin-bottom: 2.5rem !important;")
                         // About Section Button
                         a.btn.btn-xl.btn-outline-light(href='CV_Andrea_Riosa_IT.pdf')
@@ -166,9 +169,11 @@ html(lang='en')
                         p.lead
                             strong Education:
                             | Bachelor&apos;s Degree in Computer Science
-                            a(href="https://en.wikipedia.org/wiki/European_Qualifications_Framework", target="_blank", style="color: white !important;") (EQF 6)
-                            | Ca&apos; Foscari University of Venice, Mestre
-                            a(href="https://unive.it", target="_blank", style="color: white !important;") (IT)
+                            |
+                            a(href="https://en.wikipedia.org/wiki/European_Qualifications_Framework", target="_blank", rel="noopener noreferrer", style="color: white !important;") (EQF 6)
+                            | at Ca&apos; Foscari University of Venice, Mestre
+                            |
+                            a(href="https://unive.it", target="_blank", rel="noopener noreferrer", style="color: white !important;") (IT)
 
         // Portfolio Section
         section#portfolio.page-section.portfolio
@@ -296,14 +301,15 @@ html(lang='en')
                                 | Automation
                     .col-lg-3.skill-merge
                         h3
-                            a.shortcut(href="https://insights.stackoverflow.com/survey/", target="_blank")
+                            a.shortcut(href="https://survey.stackoverflow.co", target="_blank", rel="noopener noreferrer")
                                 i.fa.fa-cloud
                                 | Web
                         ul.fa-ul
                             li
                                 i.fa-li.fa.fa-square
                                 | Linux
-                                a.shortcut(href="http://51.75.69.158/", target="_blank") Server
+                                |
+                                a.shortcut(href="http://51.75.69.158", target="_blank", rel="noopener noreferrer") Server
                             li.divider
                             li
                                 i.fa-li.fa.fa-square
@@ -366,7 +372,7 @@ html(lang='en')
                             li.divider
                             li
                                 i.fa-li.fa.fa-square
-                                | GIT and SVN
+                                | Git and SVN
                             li
                                 i.fa-li.fa.fa-square
                                 | Docker
@@ -440,11 +446,11 @@ html(lang='en')
                                     | A message is required.
 
                             // Submit success message
-                            #submitSuccessMessage
+                            #submitSuccessMessage.d-none
                                 .text-center.fw-bolder.mb-3 Your message has been sent.
 
                             // Submit error message
-                            #submitErrorMessage
+                            #submitErrorMessage.d-none
                                 .text-center.text-danger.mb-3 There was an error trying to send your message.
 
                             // Submit Button
@@ -461,31 +467,34 @@ html(lang='en')
                     // Footer Social Icons
                     .col-lg-4.mb-5.mb-lg-0
                         h4.text-uppercase.mb-4 Around the Web
-                        a.btn.btn-outline-light.btn-social.mx-1(href='https://linkedin.com/in/andreariosa')
+                        a.btn.btn-outline-light.btn-social.mx-1(href='https://linkedin.com/in/andreariosa', target='_blank', rel='noopener noreferrer', aria-label='LinkedIn')
                             i.fab.fa-fw.fa-linkedin-in
-                        a.btn.btn-outline-light.btn-social.mx-1(href='https://github.com/andreariosa')
+                        a.btn.btn-outline-light.btn-social.mx-1(href='https://github.com/andreariosa', target='_blank', rel='noopener noreferrer', aria-label='GitHub')
                             i.fab.fa-fw.fa-github
-                        a.btn.btn-outline-light.btn-social.mx-1(href='https://twitter.com/ariosa404')
-                            i.fab.fa-fw.fa-twitter
-                        a.btn.btn-outline-light.btn-social.mx-1(href='https://instagram.com/ariosa404')
+                        a.btn.btn-outline-light.btn-social.mx-1(href='https://x.com/ariosa404', target='_blank', rel='noopener noreferrer', aria-label='X')
+                            i.fab.fa-fw.fa-x-twitter
+                        a.btn.btn-outline-light.btn-social.mx-1(href='https://instagram.com/ariosa404', target='_blank', rel='noopener noreferrer', aria-label='Instagram')
                             i.fab.fa-fw.fa-instagram
-                        a.btn.btn-outline-light.btn-social.mx-1(href='https://facebook.com/ariosa404')
+                        a.btn.btn-outline-light.btn-social.mx-1(href='https://facebook.com/ariosa404', target='_blank', rel='noopener noreferrer', aria-label='Facebook')
                             i.fab.fa-fw.fa-facebook-f
                     // Footer About Text
                     .col-lg-4
                         h4.text-uppercase.mb-4 About Projects
                         p.lead.mb-0
-                            | Note that all works made for
+                            | Note that work done for
+                            |
                             a(href="#experience") others
-                            | are not mentioned in this web page.
+                            |
+                            | is not listed on this web page and CV.
 
         // Copyright Section
         div.copyright.py-4.text-center.text-white
             .container
                 small
-                    | Made by Andrea Riosa
+                    | Made by Andrea Riosa in
+                    |
                     span#year
-                    | Please write me using the "Contact me" form, I will reply with my personal email.
+                    | Please use the "Contact Me" form, I will reply from my personal email.
 
         script.
             document.getElementById('year').textContent = `${new Date().getFullYear()}.`;

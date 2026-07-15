@@ -1,5 +1,5 @@
 // Portfolio Modal 1
-#portfolioModal1.portfolio-modal.modal.fade(tabindex='-1', aria-labelledby='portfolioModal1', aria-hidden='true')
+#portfolioModal1.portfolio-modal.modal.fade(tabindex='-1', aria-labelledby='portfolioModal1Label', aria-hidden='true')
     .modal-dialog.modal-xl
         .modal-content
             .modal-header.border-0
@@ -9,7 +9,7 @@
                     .row.justify-content-center
                         .col-lg-8
                             // Portfolio Modal - Title
-                            h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 neTrooper
+                            h2#portfolioModal1Label.portfolio-modal-title.text-secondary.text-uppercase.mb-0 neTrooper
                             // Icon Divider
                             .divider-custom
                                 .divider-custom-line
@@ -20,15 +20,18 @@
                             img.img-fluid.rounded.mb-5(src='assets/img/portfolio/netrooper.png', alt='neTrooper')
                             // Portfolio Modal - Text
                             p.mb-4
-                                a(href='http://netrooper.com', target='_blank') neTrooper.com
+                                a(href='https://netrooper.com', target='_blank', rel='noopener noreferrer') neTrooper.com
                                 | (
-                                a(href='http://ntr.sh', target='_blank') nTr.sh
+                                a(href='https://ntr.sh', target='_blank', rel='noopener noreferrer') nTr.sh
                                 | ) and
-                                a(href='http://andreariosa.com', target='_blank') AndreaRiosa.com
+                                |
+                                a(href='https://andreariosa.com', target='_blank', rel='noopener noreferrer') AndreaRiosa.com
                                 br
-                                | Since
+                                | neTrooper.com since
+                                |
                                 strong 2006
-                                | and
+                                | and AndreaRiosa.com since
+                                |
                                 strong 2016
                             button.btn.btn-primary(data-bs-dismiss='modal')
                                 i.fas.fa-xmark.fa-fw

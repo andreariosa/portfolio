@@ -1,5 +1,5 @@
 // Portfolio Modal 5
-#portfolioModal5.portfolio-modal.modal.fade(tabindex='-1', aria-labelledby='portfolioModal5', aria-hidden='true')
+#portfolioModal5.portfolio-modal.modal.fade(tabindex='-1', aria-labelledby='portfolioModal5Label', aria-hidden='true')
     .modal-dialog.modal-xl
         .modal-content
             .modal-header.border-0
@@ -9,7 +9,7 @@
                     .row.justify-content-center
                         .col-lg-8
                             // Portfolio Modal - Title
-                            h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 TopiCron
+                            h2#portfolioModal5Label.portfolio-modal-title.text-secondary.text-uppercase.mb-0 TopiCron
                             // Icon Divider
                             .divider-custom
                                 .divider-custom-line
@@ -20,9 +20,10 @@
                             img.img-fluid.rounded.mb-5(src='assets/img/portfolio/topicron.png', alt='TopiCron')
                             // Portfolio Modal - Text
                             p.mb-4
-                                a(href='http://topicron.com', target='_blank') TopiCron.com
+                                a(href='https://topicron.com', target='_blank', rel='noopener noreferrer') TopiCron.com
                                 br
                                 | Since
+                                |
                                 strong 2020
                             button.btn.btn-primary(data-bs-dismiss='modal')
                                 i.fas.fa-xmark.fa-fw

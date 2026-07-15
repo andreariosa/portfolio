@@ -39,4 +39,4 @@ original version.
 ## Useful conversion tools
 
 - [HTML to PUG](https://html2pug.vercel.app)
-- [CSS to SCSS](https://www.cssportal.com/css-to-scss)
+- [CSS to SCSS](https://cssportal.com/css-to-scss)

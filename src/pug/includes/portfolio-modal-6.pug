@@ -1,5 +1,5 @@
 // Portfolio Modal 6
-#portfolioModal6.portfolio-modal.modal.fade(tabindex='-1', aria-labelledby='portfolioModal5', aria-hidden='true')
+#portfolioModal6.portfolio-modal.modal.fade(tabindex='-1', aria-labelledby='portfolioModal6Label', aria-hidden='true')
     .modal-dialog.modal-xl
         .modal-content
             .modal-header.border-0
@@ -9,7 +9,7 @@
                     .row.justify-content-center
                         .col-lg-8
                             // Portfolio Modal - Title
-                            h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 TasteTweak
+                            h2#portfolioModal6Label.portfolio-modal-title.text-secondary.text-uppercase.mb-0 TasteTweak
                             // Icon Divider
                             .divider-custom
                                 .divider-custom-line
@@ -20,9 +20,10 @@
                             img.img-fluid.img-extra.rounded.mb-5(src='assets/img/portfolio/tastetweak.png', alt='TasteTweak')
                             // Portfolio Modal - Text
                             p.mb-4
-                                a(href='http://tastetweak.com', target='_blank') TasteTweak.com
+                                a(href='https://tastetweak.com', target='_blank', rel='noopener noreferrer') TasteTweak.com
                                 br
                                 | Since
+                                |
                                 strong 2023
                             button.btn.btn-primary(data-bs-dismiss='modal')
                                 i.fas.fa-xmark.fa-fw

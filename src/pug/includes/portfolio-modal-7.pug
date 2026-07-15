@@ -1,5 +1,5 @@
 // Portfolio Modal 7
-#portfolioModal7.portfolio-modal.modal.fade(tabindex='-1', aria-labelledby='portfolioModal5', aria-hidden='true')
+#portfolioModal7.portfolio-modal.modal.fade(tabindex='-1', aria-labelledby='portfolioModal7Label', aria-hidden='true')
     .modal-dialog.modal-xl
         .modal-content
             .modal-header.border-0
@@ -9,7 +9,7 @@
                     .row.justify-content-center
                         .col-lg-8
                             // Portfolio Modal - Title
-                            h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 BoostNatura
+                            h2#portfolioModal7Label.portfolio-modal-title.text-secondary.text-uppercase.mb-0 BoostNatura
                             // Icon Divider
                             .divider-custom
                                 .divider-custom-line
@@ -20,9 +20,10 @@
                             img.img-fluid.img-extra.rounded.mb-5(src='assets/img/portfolio/boostnatura.png', alt='BoostNatura')
                             // Portfolio Modal - Text
                             p.mb-4
-                                a(href='http://boostnatura.com', target='_blank') BoostNatura.com
+                                a(href='https://boostnatura.com', target='_blank', rel='noopener noreferrer') BoostNatura.com
                                 br
                                 | Since
+                                |
                                 strong 2022
                             button.btn.btn-primary(data-bs-dismiss='modal')
                                 i.fas.fa-xmark.fa-fw

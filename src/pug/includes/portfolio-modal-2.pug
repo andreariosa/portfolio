@@ -1,5 +1,5 @@
 // Portfolio Modal 2
-#portfolioModal2.portfolio-modal.modal.fade(tabindex='-1', aria-labelledby='portfolioModal2', aria-hidden='true')
+#portfolioModal2.portfolio-modal.modal.fade(tabindex='-1', aria-labelledby='portfolioModal2Label', aria-hidden='true')
     .modal-dialog.modal-xl
         .modal-content
             .modal-header.border-0
@@ -9,7 +9,7 @@
                     .row.justify-content-center
                         .col-lg-8
                             // Portfolio Modal - Title
-                            h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Hitbox
+                            h2#portfolioModal2Label.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Hitbox
                             // Icon Divider
                             .divider-custom
                                 .divider-custom-line
@@ -20,12 +20,13 @@
                             img.img-fluid.rounded.mb-5(src='assets/img/portfolio/hitbox.png', alt='Hitbox')
                             // Portfolio Modal - Text
                             p.mb-4
-                                a(href='http://hitbox.it', target='_blank') Hitbox.it
+                                a(href='https://hitbox.it', target='_blank', rel='noopener noreferrer') Hitbox.it
                                 | (
-                                a(href='http://hbx.gg', target='_blank') HBX.gg
+                                a(href='https://hbx.gg', target='_blank', rel='noopener noreferrer') HBX.gg
                                 | )
                                 br
                                 | Since
+                                |
                                 strong 2012
                             button.btn.btn-primary(data-bs-dismiss='modal')
                                 i.fas.fa-xmark.fa-fw

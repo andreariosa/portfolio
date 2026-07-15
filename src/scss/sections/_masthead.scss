@@ -29,6 +29,18 @@
   }
 }
 
+@media (max-width: 425px) {
+  .masthead .masthead-subheading {
+    .masthead-role-sep {
+      display: none;
+    }
+
+    .technical-lead-tooltip {
+      display: block;
+    }
+  }
+}
+
 @include bs.media-breakpoint-up(lg) {
   .masthead {
     padding-top: calc(6rem + 104px);
