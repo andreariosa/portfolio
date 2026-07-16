@@ -161,10 +161,18 @@ html(lang='en')
                             |
                             a(href="https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages", target="_blank", rel="noopener noreferrer", style="color: white !important;") (B2)
                     .col-lg-4.text-center.mt-4(style="margin-bottom: 2.5rem !important;")
-                        // About Section Button
-                        a.btn.btn-xl.btn-outline-light(href='CV_Andrea_Riosa_IT.pdf')
-                            i.fas.fa-download.me-2
-                            | Italian CV
+                        // About Section CV Download
+                        .dropdown.d-inline-block
+                            button.btn.btn-xl.btn-outline-light.dropdown-toggle(type="button", id="cvDownloadDropdown", data-bs-toggle="dropdown", aria-expanded="false")
+                                i.fas.fa-download.me-2
+                                | Download CV
+                            ul.dropdown-menu.dropdown-menu-cv(aria-labelledby="cvDownloadDropdown")
+                                li
+                                    a.dropdown-item(href="Andrea_Riosa_CV_IT.pdf", download)
+                                        | Italian
+                                li
+                                    a.dropdown-item(href="Andrea_Riosa_CV_EN.pdf", download)
+                                        | English
                     .col-lg-4.text-center
                         p.lead
                             strong Education:
