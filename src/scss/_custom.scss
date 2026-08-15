@@ -185,6 +185,20 @@ $custom-color-2: #2c343f;
   margin-top: 0px;
 }
 
+@media (max-width: 425px) {
+  .experience-role-sep {
+    display: none;
+  }
+
+  .experience-role-lead {
+    display: block;
+  }
+
+  .experience-role-br {
+    display: none;
+  }
+}
+
 //
 // Custom sections: Skills (extra)
 //
