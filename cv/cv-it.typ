@@ -15,7 +15,8 @@
   personal-info-position: left,
 )
 
-#align(left)[*Esperienza & Innovazione* • *Organizzazione & Passione* • *Autonomia & Teamwork*]
+//Senior Software Engineer e Technical Lead con oltre 10 anni di esperienza, che combina competenza tecnica, innovazione e solide capacità organizzative. Autonomo e appassionato, con un approccio collaborativo al lavoro di squadra e alla risoluzione di problemi trasversali.
+#align(left)[Senior Software Engineer e Technical Lead con oltre 10 anni di esperienza nello sviluppo di software per sistemi industriali di scansione e ottimizzazione, dalla progettazione alla messa in funzione sul campo. Punto di riferimento tecnico trasversale ai reparti su progetti complessi, con un approccio pratico alla risoluzione dei problemi e alla condivisione della conoscenza tecnica tra i team.]
 
 == Esperienze Professionali
 
@@ -25,7 +26,11 @@
   company: link("https://www.microtec.com")[MiCROTEC S.p.A.],
   dates: dates-helper(start-date: "Set 2017", end-date: "Attuale"),
 )
-- _[Placeholder — descrizione da completare]_
+- Sviluppo e manutenzione di soluzioni software per sistemi industriali di scansione e ottimizzazione del legno, contribuendo alle fasi di progettazione, sviluppo, testing, commissioning e supporto al cliente
+- Referente tecnico per il Project Management e per team cross-functional, con attività di raccolta dei requisiti, supervisione della progettazione tecnica e supporto alla pianificazione e all'esecuzione dei progetti
+- Elaborazione di linee guida e documentazione di riferimento per i reparti coinvolti nella progettazione tecnica, a supporto della coerenza dei processi e dell'accessibilità della conoscenza tecnica in azienda
+- Coordinamento delle attività tecniche tra Development, Customer Support, Pre-Sales e After-Sales, incluse attività di commissioning complesse, interventi presso il cliente e formazione tecnica
+- Contributo all'evoluzione dei prodotti attraverso l'analisi dei requisiti, la documentazione tecnica, la definizione di nuove funzionalità e la loro validazione
 
 #work(
   title: "Full Stack Web Developer",

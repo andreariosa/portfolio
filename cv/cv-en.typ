@@ -15,7 +15,8 @@
   personal-info-position: left,
 )
 
-#align(left)[*Experience & Innovation* • *Organization & Passion* • *Autonomy & Teamwork*]
+//Senior Software Engineer and Technical Lead with 10+ years of experience, combining technical expertise, innovation and strong organizational skills. Autonomous and passionate, with a collaborative approach to teamwork and cross-functional problem solving.
+#align(left)[Senior Software Engineer and Technical Lead with 10+ years of experience developing software for industrial scanning and optimization systems, from design through field commissioning. Cross-departmental technical reference on complex projects, with a hands-on approach to problem-solving and to sharing technical knowledge across teams.]
 
 == Work Experience
 
@@ -25,7 +26,11 @@
   company: link("https://www.microtec.com")[MiCROTEC S.p.A.],
   dates: dates-helper(start-date: "Sep 2017", end-date: "Present"),
 )
-- _[Placeholder — description to be completed]_
+- Develop and maintain software solutions for industrial wood scanning and optimization systems, contributing across design, development, testing, commissioning and customer support
+- Act as a technical reference for Project Management and cross-functional teams, gathering requirements, supervising technical design and supporting project planning and execution
+- Define guidelines and reference documentation for departments involved in technical design, supporting process consistency and technical knowledge accessibility across the company
+- Coordinate technical activities across Development, Customer Support, Pre-Sales and After-Sales, including complex commissioning activities, on-site interventions and technical training
+- Contribute to product evolution through requirements analysis, technical documentation, new feature definition and validation
 
 #work(
   title: "Full Stack Web Developer",
