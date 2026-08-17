@@ -42,13 +42,13 @@
 - Estimated development timelines and took part in the design phase with clients
 
 #work(
-  title: "IT Technician | School internship (160 hours)",
+  title: "ICT Technician | School internship (160 hours)",
   location: "Venice, Italy",
   company: link("https://www.veneziasistemi.it")[Venezia Sistemi S.r.l.],
   dates: dates-helper(start-date: "Jun 2012", end-date: "Jul 2012"),
 )
-- Supported network administration in a live IT lab environment
-- Hardware diagnostics and IT support alongside senior technicians
+- Supported network administration in a live ICT lab environment
+- Hardware diagnostics and ICT support alongside senior technicians
 
 == Education
 

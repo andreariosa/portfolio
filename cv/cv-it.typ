@@ -42,13 +42,13 @@
 - Ha stimato i tempi di sviluppo e partecipato alla fase di progettazione con i clienti
 
 #work(
-  title: "Tecnico IT | Stage scolastico (160 ore)",
+  title: "Tecnico ICT | Stage scolastico (160 ore)",
   location: "Venezia, Italia",
   company: link("https://www.veneziasistemi.it")[Venezia Sistemi S.r.l.],
   dates: dates-helper(start-date: "Giu 2012", end-date: "Lug 2012"),
 )
-- Supporto all'amministrazione di rete in un laboratorio IT operativo
-- Diagnostica hardware e supporto IT affiancando tecnici senior
+- Supporto all'amministrazione di rete in un laboratorio ICT operativo
+- Diagnostica hardware e supporto ICT affiancando tecnici senior
 
 == Formazione ed Istruzione
 
