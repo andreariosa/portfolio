@@ -94,7 +94,8 @@
 
 - *Industria:* Windows, WinAPI, *C*, *C++*, Proprietary Frameworks, CMake, Conan, SQL, RDBMS, Advanced Debugging, Testing, Optimization, Automation
 - *Web:* Linux Server, HTML, CSS, Sass, JavaScript, TypeScript, NoSQL, Cloud Platforms, Bootstrap, Tailwind CSS, Node.js, Express.js, Next.js
-- *Strumenti:* Microsoft Visual Studio, Visual Studio Code, Git, SVN, Docker, Azure DevOps, GitHub, Jira, Trello, Microsoft 365, Google Workspace
+- *Strumenti:* Microsoft Visual Studio, Visual Studio Code, Git, SVN, Docker, Azure DevOps, GitHub, Jira, Trello
+- *Sviluppo assistito da AI:* Claude, Cursor
 
 == Progetti di Rilievo
 
